@@ -28,12 +28,11 @@ function makeGrid(rows, columns) {
 //selecting colors
 function addColor() {
   table.innerhtml = '';
-  let coloredInCell = document.querySelector('td')
+  const coloredInCell = document.querySelector('td')
   for (let z = 0; z < coloredInCell.length; z++) {
     const color = document.getElementById('colorPicker');
     addColor().addEventListener("click", function(e){
       event.target.style.backgroundColor = color.value;
     })
   }
-
 }
